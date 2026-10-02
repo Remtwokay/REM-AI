@@ -1,0 +1,5 @@
+nicegui==2.0.0
+httpx
+loguru
+python-jose[cryptography]
+aiosqlite
