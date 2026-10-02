@@ -1,0 +1,11 @@
+services:
+  rem-ai:
+    build:.
+    ports:
+      - "8080:8080"
+    volumes:
+      -./workspace:/app/workspace
+      -./.rem_snapshots:/app/.rem_snapshots
+      -./logs:/app/logs
+    env_file:.env
+    restart: unless-stopped
